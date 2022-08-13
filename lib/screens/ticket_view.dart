@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:booktickets/utils/app_layout.dart';
 import 'package:booktickets/utils/app_styles.dart';
 import 'package:booktickets/widgets/ticket_container.dart';
@@ -45,7 +47,7 @@ class TicketView extends StatelessWidget {
                               child: LayoutBuilder(
                                 builder: (BuildContext context,
                                     BoxConstraints constraints) {
-                                  print(constraints.constrainWidth());
+                                  log(constraints.constrainWidth().toString());
                                   return Flex(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
